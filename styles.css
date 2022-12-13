@@ -25,4 +25,12 @@ button:hover {
     background: linear-gradient(to bottom, rgb(124, 124, 124), rgba(58, 58, 58, 0.657))
 }
 
-
+div {
+    display: block;
+    position: fixed;
+    right: 35px;
+    background-color: rgb(58, 58, 58);
+    padding: 20px 60px 20px 60px;
+    font-size: 25px;
+    font-family: 'Movies', sans-serif;
+}
