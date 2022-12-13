@@ -6,9 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title></title>
+
+    <script>
+        function check() {
+           let pont = 0
+           let helyesValasz = ["1C", "2A"]
+              for (let i = 0; i < helyesValasz.length; i++) {
+                  let elem = document.getElementById(helyesValasz[i]);
+                  if (elem.checked == true) {
+                       pont += 1
+                   }
+               }
+         }
+    </script>
 </head>
 <body>
-    <p>Hány része van A keresztapa trilógiának?</p>
+    <p>Hány része van <em>A keresztapa</em> trilógiának?</p>
 
             <form>
                   <input type="radio" id="1A" name="" value="A">
@@ -20,28 +33,31 @@
             </form> <br><br>
 
 
-    <p></p>
+    <p>Ki rendezte az <em>Avatar</em> című filmet?</p>
 
             <form>
                   <input type="radio" id="2A" name="" value="A">
-                  <label for="2A"></label><br>
+                  <label for="2A">A: James Cameron</label><br>
                   <input type="radio" id="2B" name="" value="B">
-                  <label for="2B"></label><br>
+                  <label for="2B">B: Ridley Scott</label><br>
                   <input type="radio" id="2C" name="" value="C">
-                  <label for="2C"></label>
+                  <label for="2C">C: Francis Ford Coppla</label>
             </form> <br><br>
 
 
-    <p></p>
+    <p>Az alábbi színészek közül ki nem kapott Oscar díjat?</p>
 
             <form>
                   <input type="radio" id="3A" name="" value="A">
-                  <label for="3A"></label><br>
+                  <label for="3A">A: </label><br>
                   <input type="radio" id="3B" name="" value="B">
-                  <label for="3B"></label><br>
+                  <label for="3B">B: </label><br>
                   <input type="radio" id="3C" name="" value="C">
-                  <label for="3C"></label>
+                  <label for="3C">C: </label>
             </form> <br><br>
+
+    
+    <button onclick="check()">Kiértékelés</button>
     
 </body>
 </html>
