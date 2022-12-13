@@ -5,9 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+
+    <script>
+        let pont = 0
+        let helyesValasz = ["1C"]
+            for (let i = 0; i < helyesValasz.length; i++) {
+                let elem = document.getElementById(helyesValasz[i]);
+                if (elem.checked == true) {
+                    pont += 1
+                }
+    </script>
 </head>
 <body>
-    <p>Hány része van A keresztapa trilógiának?</p>
+    <p>Hány része van <em>A keresztapa</em> trilógiának?</p>
 
             <form>
                   <input type="radio" id="1A" name="" value="A">
