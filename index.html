@@ -10,7 +10,7 @@
     <script>
         function check() {
            let pont = 0
-           let helyesValasz = ["1C", "2A", "3B"]
+           let helyesValasz = ["1C", "2A", "3B",  "4C", "5C", "6B"]
               for (let i = 0; i < helyesValasz.length; i++) {
                   let elem = document.getElementById(helyesValasz[i]);
                   if (elem.checked == true) {
@@ -56,7 +56,39 @@
                   <label for="3C">C: Jessica Chastain</label>
             </form> <br><br>
 
-    
+            <p>Hány filmben dolgozott eggyütt Bud Spencer Tererence Hillel?></p>
+           
+            <form>
+                  <input type="radio" id="4A" name="" value="A">
+                  <label for="4A">A: 22 </label><br>
+                  <input type="radio" id="4B" name="" value="B">
+                  <label for="4B">B: 19</label><br>
+                  <input type="radio" id="4C" name="" value="C">
+                  <label for="4C">C: 17</label>
+            </form> <br><br>
+
+    <p>Melyik a kakukktojás?></p>
+           
+            <form>
+                  <input type="radio" id="5A" name="" value="A">
+                  <label for="5A">A: Toy Story </label><br>
+                  <input type="radio" id="5B" name="" value="B">
+                  <label for="5B">B: Verdák</label><br>
+                  <input type="radio" id="5C" name="" value="C">
+                  <label for="5C">C: Dumbo</label>
+            </form> <br><br>
+
+    <p>Melyik NEM disney film?></p>
+           
+            <form>
+                  <input type="radio" id="6A" name="" value="A">
+                  <label for="6A">A: Coco </label><br>
+                  <input type="radio" id="6B" name="" value="B">
+                  <label for="6B">B: Énekelj!</label><br>
+                  <input type="radio" id="6C" name="" value="C">
+                  <label for="6C">C: Fel</label>
+            </form> <br><br>
+
     <button onclick="check()">Kiértékelés</button>
     
 </body>
