@@ -7,13 +7,16 @@
     <title></title>
 
     <script>
-        let pont = 0
-        let helyesValasz = ["1C"]
-            for (let i = 0; i < helyesValasz.length; i++) {
-                let elem = document.getElementById(helyesValasz[i]);
-                if (elem.checked == true) {
-                    pont += 1
-                }
+        function check() {
+           let pont = 0
+           let helyesValasz = ["1C"]
+              for (let i = 0; i < helyesValasz.length; i++) {
+                  let elem = document.getElementById(helyesValasz[i]);
+                  if (elem.checked == true) {
+                       pont += 1
+                   }
+               }
+         }
     </script>
 </head>
 <body>
@@ -51,6 +54,9 @@
                   <input type="radio" id="3C" name="" value="C">
                   <label for="3C"></label>
             </form> <br><br>
+
+    
+    
     
 </body>
 </html>
