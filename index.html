@@ -10,7 +10,7 @@
     <script>
         function check() {
            let pont = 0
-           let helyesValasz = ["1C", "2A", "3B",  "4C", "5C", "6B"]
+           let helyesValasz = ["1C", "2A", "3B",  "4C", "5C", "6B", "7A"]
               for (let i = 0; i < helyesValasz.length; i++) {
                   let elem = document.getElementById(helyesValasz[i]);
                   if (elem.checked == true) {
@@ -70,7 +70,7 @@
                   <label for="4C">C: 17</label>
             </form> <br><br>
 
-    <p>Melyik a kakukktojás?></p>
+    <p>Melyik a kakukktojás?</p>
            
             <form>
                   <input type="radio" id="5A" name="kakukk" value="A">
@@ -81,7 +81,7 @@
                   <label for="5C">C: Dumbo</label>
             </form> <br><br>
 
-    <p>Melyik NEM disney film?></p>
+    <p>Melyik NEM disney film?</p>
            
             <form>
                   <input type="radio" id="6A" name="disney" value="A">
@@ -91,6 +91,18 @@
                   <input type="radio" id="6C" name="disney" value="C">
                   <label for="6C">C: Fel</label>
             </form> <br><br>
+
+    <p>Mibe halt meg Chadwick Boseman?</p>
+           
+            <form>
+                  <input type="radio" id="7A" name="dead" value="A">
+                  <label for="7A">A: Rák</label><br>
+                  <input type="radio" id="7B" name="dead" value="B">
+                  <label for="7B">B: Baleset</label><br>
+                  <input type="radio" id="7C" name="dead" value="C">
+                  <label for="7C">C: Nem tudjuk</label>
+            </form> <br><br>
+
 
     <button onclick="check()">Kiértékelés</button>  
     </section>
