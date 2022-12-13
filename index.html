@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title></title>
+    <title>Filmes quiz</title>
 
     <script>
         function check() {
            let pont = 0
-           let helyesValasz = ["1C", "2A", "3B",  "4C", "5C", "6B", "7A", "8B"]
+           let helyesValasz = ["1C", "2A", "3B",  "4C", "5C", "6B", "7A", "8B", "9A"]
               for (let i = 0; i < helyesValasz.length; i++) {
                   let elem = document.getElementById(helyesValasz[i]);
                   if (elem.checked == true) {
@@ -23,7 +23,6 @@
     </script>
 </head>
 <body>
-    <section>
     <p>Hány része van <em>A keresztapa</em> trilógiának?</p>
 
             <form>
@@ -103,7 +102,7 @@
                   <label for="7C">C: Nem tudjuk</label>
             </form> <br><br>
 
-    <p>Ki játsza batmant a <em>batman: sötét lovag</em  >-ban?</p>
+    <p>Ki játsza batmant a <em>batman: sötét lovag</em>-ban?</p>
            
             <form>
                   <input type="radio" id="8A" name="batman" value="A">
@@ -114,8 +113,17 @@
                   <label for="8C">C: Cillian Murphy</label>
             </form> <br><br>
 
+    <p>Mikor készült az első <em>Az</em> film?</p>
+           
+                <form>
+                      <input type="radio" id="9A" name="Az" value="A">
+                      <label for="9A">A: 1990</label><br>
+                      <input type="radio" id="9B" name="Az" value="B">
+                      <label for="9B">B: 2017</label><br>
+                      <input type="radio" id="9C" name="Az" value="C">
+                      <label for="9C">C: 2018</label>
+                </form> <br><br>
 
     <button onclick="check()">Kiértékelés</button>  
-    </section>
 </body>
 </html>
