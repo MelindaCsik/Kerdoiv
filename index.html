@@ -10,7 +10,7 @@
     <script>
         function check() {
            let pont = 0
-           let helyesValasz = ["1C", "2A", "3B",  "4C", "5C", "6B", "7A"]
+           let helyesValasz = ["1C", "2A", "3B",  "4C", "5C", "6B", "7A", "8B"]
               for (let i = 0; i < helyesValasz.length; i++) {
                   let elem = document.getElementById(helyesValasz[i]);
                   if (elem.checked == true) {
@@ -101,6 +101,17 @@
                   <label for="7B">B: Baleset</label><br>
                   <input type="radio" id="7C" name="dead" value="C">
                   <label for="7C">C: Nem tudjuk</label>
+            </form> <br><br>
+
+    <p>Ki játsza batmant a <em>batman: sötét lovag</em  >-ban?</p>
+           
+            <form>
+                  <input type="radio" id="8A" name="batman" value="A">
+                  <label for="8A">A: Heath Ledger</label><br>
+                  <input type="radio" id="8B" name="batman" value="B">
+                  <label for="8B">B: Christian Bale</label><br>
+                  <input type="radio" id="8C" name="batman" value="C">
+                  <label for="8C">C: Cillian Murphy</label>
             </form> <br><br>
 
 
