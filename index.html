@@ -15,12 +15,15 @@
                   let elem = document.getElementById(helyesValasz[i]);
                   if (elem.checked == true) {
                        pont += 1
-                   }
+                   } 
+                
                }
-         }
+               alert("A pontszámod: 9/" + pont)
+            }
     </script>
 </head>
 <body>
+    <section>
     <p>Hány része van <em>A keresztapa</em> trilógiának?</p>
 
             <form>
@@ -89,7 +92,7 @@
                   <label for="6C">C: Fel</label>
             </form> <br><br>
 
-    <button onclick="check()">Kiértékelés</button>
-    
+    <button onclick="check()">Kiértékelés</button>  
+    </section>
 </body>
 </html>
